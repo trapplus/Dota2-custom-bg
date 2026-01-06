@@ -1,7 +1,0 @@
-pak01_dir.vpk - Ru locale (Main index) if noexist, u need to dload this file from guide link
-
-pak02_dir - FIX (main index)
-pak0{3+inf}_dir - Mods (oldest index: currently_index-1)
-
-Если вы хотите добавить сторонние моды сюда, его индекс(pak>>01<<_dir) в названиие должен быть увеличен на один.
-Если же файлы с raw data имеют конфликтующие индексы со стандартными или кастомными, установка будет невозможна.
