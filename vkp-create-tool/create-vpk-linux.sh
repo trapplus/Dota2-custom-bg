@@ -7,7 +7,7 @@ VIDEO_DIR="$VPK_DIR/123"
 VIDEO_FILE="$VIDEO_DIR/123.webm"
 
 echo "=============================="
-echo " СБОРКА VPK ИЗ pak03_dir"
+echo " СБОРКА VPK ИЗ pak03_dir" для Linux"
 echo " Внимание:"
 echo " - Используется vpk.exe - запуск через wine"
 echo " - Убедитесь, что wine установлен"
@@ -40,7 +40,7 @@ if [[ ! -f "$VIDEO_FILE" ]]; then
   exit 1
 fi
 
-# Валидация расширение видео 
+# Валидация расширение видео
 if [[ "${VIDEO_FILE##*.}" != "webm" ]]; then
   echo "[ПРЕДУПРЕЖДЕНИЕ] Файл не является .webm"
   read -r
