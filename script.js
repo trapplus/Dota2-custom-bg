@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const githubLink = document.querySelector(
     '.footer-link[href="https://github.com"]',
   );
-  if (githubLink && GITHUB_USERNAME !== "YOUR_USERNAME") {
+  if (githubLink && GITHUB_USERNAME !== "trapplus") {
     githubLink.href = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO}`;
   }
 
