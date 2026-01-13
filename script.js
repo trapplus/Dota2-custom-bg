@@ -279,15 +279,3 @@ lightbox.addEventListener("transitionend", () => {
   }
 });
 
-// ===== Console Easter Egg =====
-console.log(
-  `
-%c╔══════════════════════════════════════════════╗
-║  🎮 Dota 2 Custom Backgrounds Project      ║
-║  Made with ❤️ for the Dota 2 community      ║
-║                                              ║
-║  Customize your game, express yourself!     ║
-╚══════════════════════════════════════════════╝
-`,
-  "color: #D0652F; font-weight: bold; font-size: 12px; font-family: monospace;",
-);
