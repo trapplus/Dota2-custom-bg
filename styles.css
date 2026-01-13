@@ -1,84 +1,88 @@
 /* ===== CSS Variables & Theme System ===== */
 :root {
-    /* Light Theme (Default) */
-    --md-sys-color-primary: #6750A4;
+    /* Light Theme - Pure Monochrome */
+    --md-sys-color-primary: #2C2C2C;
     --md-sys-color-on-primary: #FFFFFF;
-    --md-sys-color-primary-container: #EADDFF;
-    --md-sys-color-on-primary-container: #21005D;
+    --md-sys-color-primary-container: #F5F5F5;
+    --md-sys-color-on-primary-container: #1A1A1A;
     
-    --md-sys-color-secondary: #625B71;
+    --md-sys-color-secondary: #4A4A4A;
     --md-sys-color-on-secondary: #FFFFFF;
-    --md-sys-color-secondary-container: #E8DEF8;
-    --md-sys-color-on-secondary-container: #1D192B;
+    --md-sys-color-secondary-container: #EBEBEB;
+    --md-sys-color-on-secondary-container: #212121;
     
-    --md-sys-color-tertiary: #7D5260;
+    --md-sys-color-tertiary: #616161;
     --md-sys-color-on-tertiary: #FFFFFF;
-    --md-sys-color-tertiary-container: #FFD8E4;
-    --md-sys-color-on-tertiary-container: #31111D;
+    --md-sys-color-tertiary-container: #E0E0E0;
+    --md-sys-color-on-tertiary-container: #2C2C2C;
     
-    --md-sys-color-error: #B3261E;
+    --md-sys-color-error: #D32F2F;
     --md-sys-color-on-error: #FFFFFF;
-    --md-sys-color-error-container: #F9DEDC;
-    --md-sys-color-on-error-container: #410E0B;
+    --md-sys-color-error-container: #FFEBEE;
+    --md-sys-color-on-error-container: #B71C1C;
     
-    --md-sys-color-background: #FFFBFE;
-    --md-sys-color-on-background: #1C1B1F;
-    --md-sys-color-surface: #FFFBFE;
-    --md-sys-color-on-surface: #1C1B1F;
-    --md-sys-color-surface-variant: #E7E0EC;
-    --md-sys-color-on-surface-variant: #49454F;
-    --md-sys-color-outline: #79747E;
-    --md-sys-color-surface-container-low: #F7F2FA;
-    --md-sys-color-surface-container: #F3EDF7;
-    --md-sys-color-surface-container-high: #ECE6F0;
-    --md-sys-color-surface-container-highest: #E6E0E9;
+    --md-sys-color-background: #FFFFFF;
+    --md-sys-color-on-background: #1A1A1A;
+    --md-sys-color-surface: #FFFFFF;
+    --md-sys-color-on-surface: #1A1A1A;
+    --md-sys-color-surface-variant: #F5F5F5;
+    --md-sys-color-on-surface-variant: #616161;
+    --md-sys-color-outline: #BDBDBD;
+    --md-sys-color-surface-container-low: #FAFAFA;
+    --md-sys-color-surface-container: #F5F5F5;
+    --md-sys-color-surface-container-high: #EEEEEE;
+    --md-sys-color-surface-container-highest: #E0E0E0;
     
-    --md-sys-elevation-1: 0 1px 3px 1px rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-    --md-sys-elevation-2: 0 2px 6px 2px rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-    --md-sys-elevation-3: 0 4px 8px 3px rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
-    --md-sys-elevation-4: 0 6px 10px 4px rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-    --md-sys-elevation-5: 0 8px 12px 6px rgba(0, 0, 0, 0.15), 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+    --hero-glow-color: rgba(0, 0, 0, 0.15);
+    
+    --md-sys-elevation-1: 0 1px 3px 1px rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    --md-sys-elevation-2: 0 2px 6px 2px rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    --md-sys-elevation-3: 0 4px 8px 3px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.24);
+    --md-sys-elevation-4: 0 6px 10px 4px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.24);
+    --md-sys-elevation-5: 0 8px 12px 6px rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
 }
 
 [data-theme="dark"] {
-    /* Dark Theme */
-    --md-sys-color-primary: #D0BCFF;
-    --md-sys-color-on-primary: #381E72;
-    --md-sys-color-primary-container: #4F378B;
-    --md-sys-color-on-primary-container: #EADDFF;
+    /* Dark Theme - Pure Monochrome */
+    --md-sys-color-primary: #E0E0E0;
+    --md-sys-color-on-primary: #1A1A1A;
+    --md-sys-color-primary-container: #2C2C2C;
+    --md-sys-color-on-primary-container: #F5F5F5;
     
-    --md-sys-color-secondary: #CCC2DC;
-    --md-sys-color-on-secondary: #332D41;
-    --md-sys-color-secondary-container: #4A4458;
-    --md-sys-color-on-secondary-container: #E8DEF8;
+    --md-sys-color-secondary: #BDBDBD;
+    --md-sys-color-on-secondary: #212121;
+    --md-sys-color-secondary-container: #3A3A3A;
+    --md-sys-color-on-secondary-container: #EBEBEB;
     
-    --md-sys-color-tertiary: #EFB8C8;
-    --md-sys-color-on-tertiary: #492532;
-    --md-sys-color-tertiary-container: #633B48;
-    --md-sys-color-on-tertiary-container: #FFD8E4;
+    --md-sys-color-tertiary: #9E9E9E;
+    --md-sys-color-on-tertiary: #2C2C2C;
+    --md-sys-color-tertiary-container: #424242;
+    --md-sys-color-on-tertiary-container: #E0E0E0;
     
-    --md-sys-color-error: #F2B8B5;
-    --md-sys-color-on-error: #601410;
-    --md-sys-color-error-container: #8C1D18;
-    --md-sys-color-on-error-container: #F9DEDC;
+    --md-sys-color-error: #EF5350;
+    --md-sys-color-on-error: #1A1A1A;
+    --md-sys-color-error-container: #3A2020;
+    --md-sys-color-on-error-container: #FFCDD2;
     
-    --md-sys-color-background: #1C1B1F;
-    --md-sys-color-on-background: #E6E1E5;
-    --md-sys-color-surface: #1C1B1F;
-    --md-sys-color-on-surface: #E6E1E5;
-    --md-sys-color-surface-variant: #49454F;
-    --md-sys-color-on-surface-variant: #CAC4D0;
-    --md-sys-color-outline: #938F99;
-    --md-sys-color-surface-container-low: #1D1B20;
-    --md-sys-color-surface-container: #211F26;
-    --md-sys-color-surface-container-high: #2B2930;
-    --md-sys-color-surface-container-highest: #36343B;
+    --md-sys-color-background: #121212;
+    --md-sys-color-on-background: #E0E0E0;
+    --md-sys-color-surface: #121212;
+    --md-sys-color-on-surface: #E0E0E0;
+    --md-sys-color-surface-variant: #2C2C2C;
+    --md-sys-color-on-surface-variant: #BDBDBD;
+    --md-sys-color-outline: #616161;
+    --md-sys-color-surface-container-low: #1A1A1A;
+    --md-sys-color-surface-container: #212121;
+    --md-sys-color-surface-container-high: #2C2C2C;
+    --md-sys-color-surface-container-highest: #363636;
     
-    --md-sys-elevation-1: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
-    --md-sys-elevation-2: 0 2px 6px 2px rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
-    --md-sys-elevation-3: 0 4px 8px 3px rgba(0, 0, 0, 0.3), 0 1px 3px 0 rgba(0, 0, 0, 0.4);
-    --md-sys-elevation-4: 0 6px 10px 4px rgba(0, 0, 0, 0.3), 0 2px 3px 0 rgba(0, 0, 0, 0.4);
-    --md-sys-elevation-5: 0 8px 12px 6px rgba(0, 0, 0, 0.3), 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+    --hero-glow-color: rgba(255, 255, 255, 0.15);
+    
+    --md-sys-elevation-1: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    --md-sys-elevation-2: 0 2px 6px 2px rgba(0, 0, 0, 0.4), 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    --md-sys-elevation-3: 0 4px 8px 3px rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    --md-sys-elevation-4: 0 6px 10px 4px rgba(0, 0, 0, 0.4), 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    --md-sys-elevation-5: 0 8px 12px 6px rgba(0, 0, 0, 0.4), 0 4px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* ===== Base Styles ===== */
@@ -154,9 +158,7 @@ body {
     justify-content: center;
     padding: 80px 24px;
     overflow: hidden;
-    background: linear-gradient(135deg, 
-        var(--md-sys-color-primary-container) 0%,
-        var(--md-sys-color-secondary-container) 100%);
+    background: var(--md-sys-color-background);
 }
 
 .hero-decoration {
@@ -166,9 +168,9 @@ body {
     right: 0;
     bottom: 0;
     background-image: 
-        radial-gradient(circle at 20% 30%, var(--md-sys-color-tertiary-container) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, var(--md-sys-color-primary-container) 0%, transparent 50%);
-    opacity: 0.5;
+        radial-gradient(circle at 20% 30%, var(--hero-glow-color) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, var(--hero-glow-color) 0%, transparent 50%);
+    opacity: 1;
     animation: float 20s ease-in-out infinite;
 }
 
@@ -202,8 +204,8 @@ body {
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
-    background-color: var(--md-sys-color-tertiary-container);
-    color: var(--md-sys-color-on-tertiary-container);
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
@@ -221,14 +223,14 @@ body {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 24px;
-    color: var(--md-sys-color-on-primary-container);
+    color: var(--md-sys-color-on-background);
     letter-spacing: -0.02em;
     animation: fadeInUp 0.8s 0.2s cubic-bezier(0.4, 0, 0.2, 1) backwards;
 }
 
 .hero-subtitle {
     font-size: clamp(18px, 3vw, 24px);
-    color: var(--md-sys-color-on-secondary-container);
+    color: var(--md-sys-color-on-surface-variant);
     margin-bottom: 48px;
     font-weight: 400;
     animation: fadeInUp 0.8s 0.3s cubic-bezier(0.4, 0, 0.2, 1) backwards;
@@ -267,7 +269,7 @@ body {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     transform: translate(-50%, -50%);
     transition: width 0.6s, height 0.6s;
 }
@@ -335,7 +337,75 @@ body {
 /* ===== Installation Section ===== */
 .installation-section {
     padding: 80px 0;
-    background-color: var(--md-sys-color-surface);
+    background-color: var(--md-sys-color-background);
+}
+
+.method-tabs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 32px;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface-variant);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab-button:hover {
+    background-color: var(--md-sys-color-surface-container-high);
+    transform: translateY(-2px);
+}
+
+.tab-button.active {
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    border-color: var(--md-sys-color-primary);
+}
+
+.tab-button .material-icons {
+    font-size: 24px;
+}
+
+.method-content {
+    display: none;
+}
+
+.method-content.active {
+    display: block;
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--md-sys-color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inline-link:hover {
+    color: var(--md-sys-color-on-primary-container);
+    text-decoration: underline;
+}
+
+.inline-link .material-icons {
+    font-size: 18px;
 }
 
 .installation-steps {
@@ -445,6 +515,25 @@ body {
 .info-card .material-icons {
     font-size: 24px;
     flex-shrink: 0;
+}
+
+.info-card ul {
+    list-style-type: disc;
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+}
+
+.info-card li {
+    margin: 4px 0;
+    line-height: 1.5;
+}
+
+.info-card code {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
 }
 
 /* ===== Gallery Section ===== */
