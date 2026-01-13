@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 Custom Backgrounds - Установка и коллекция</title>
+    <meta name="description" content="Коллекция кастомных фонов для главного меню Dota 2 с подробной инструкцией по установке">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Flex:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle FAB -->
+    <button class="theme-toggle-fab" id="themeToggle" aria-label="Переключить тему">
+        <span class="material-icons">light_mode</span>
+    </button>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="material-icons">palette</span>
+                <span>Кастомные фоны</span>
+            </div>
+            <h1 class="hero-title">Dota 2 Custom Backgrounds</h1>
+            <p class="hero-subtitle">Персонализируйте главное меню Dota 2 с уникальными анимированными фонами</p>
+            <div class="hero-actions">
+                <a href="#gallery" class="button button-primary">
+                    <span class="material-icons">photo_library</span>
+                    Посмотреть коллекцию
+                </a>
+                <a href="#installation" class="button button-secondary">
+                    <span class="material-icons">download</span>
+                    Инструкция
+                </a>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+    </header>
+
+    <!-- Installation Guide -->
+    <section class="installation-section" id="installation">
+        <div class="container">
+            <div class="section-header">
+                <span class="material-icons section-icon">integration_instructions</span>
+                <h2 class="section-title">Как установить</h2>
+                <p class="section-subtitle">Простая инструкция по установке кастомного фона</p>
+            </div>
+
+            <div class="installation-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Выберите фон</h3>
+                        <p class="step-description">Пролистайте галерею ниже и выберите понравившийся фон из коллекции</p>
+                        <div class="step-icon">
+                            <span class="material-icons">check_circle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Скачайте файл</h3>
+                        <p class="step-description">Скачайте файл <code>pak03_dir.vpk</code> из соответствующей папки в репозитории</p>
+                        <div class="step-icon">
+                            <span class="material-icons">download</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Установите в папку Dota 2</h3>
+                        <p class="step-description">Поместите файл в папку:<br><code>steamapps/common/dota 2 beta/game/dota/</code></p>
+                        <div class="step-icon">
+                            <span class="material-icons">folder</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Запустите игру</h3>
+                        <p class="step-description">Откройте Dota 2 и наслаждайтесь новым фоном главного меню!</p>
+                        <div class="step-icon">
+                            <span class="material-icons">videogame_asset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card warning">
+                <span class="material-icons">info</span>
+                <div>
+                    <strong>Важно:</strong> Если у вас уже установлен другой мод с файлом pak03_dir.vpk, сделайте резервную копию перед заменой.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="material-icons section-icon">photo_library</span>
+                <h2 class="section-title">Коллекция фонов</h2>
+                <p class="section-subtitle">Выберите идеальный фон для вашего главного меню</p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Dota 2 Custom Backgrounds</h3>
+                    <p>Проект с открытым исходным кодом для персонализации интерфейса Dota 2</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com" class="footer-link" target="_blank">
+                        <span class="material-icons">code</span>
+                        GitHub
+                    </a>
+                    <a href="#installation" class="footer-link">
+                        <span class="material-icons">help</span>
+                        Помощь
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Made with <span class="material-icons">favorite</span> for Dota 2 community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <span class="material-icons">close</span>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <a href="#" class="button button-primary" id="lightboxDownload">
+                    <span class="material-icons">download</span>
+                    Скачать
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
