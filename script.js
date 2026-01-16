@@ -105,7 +105,7 @@ function createGalleryItem(background) {
   // Construct GitHub raw URL for the image
   const repoBase =
     "https://raw.githubusercontent.com/trapplus/Dota2-custom-bg/main";
-  const imagePath = `${repoBase}/resources/complited-bg/${background.folder}/img.jpg`;
+  const imagePath = `${repoBase}/assets/complited-bg/${background.folder}/img.jpg`;
   const downloadPath = `https://github.com/trapplus/Dota2-custom-bg/raw/main/assets/complited-bg/${background.folder}/pak03_dir.vpk`;
 
   item.innerHTML = `
@@ -302,16 +302,3 @@ lightbox.addEventListener("transitionend", () => {
     lightboxClose.focus();
   }
 });
-
-// ===== Console Easter Egg =====
-console.log(
-  `
-%c╔══════════════════════════════════════════════╗
-║  🎮 Dota 2 Custom Backgrounds Project        ║
-║  Made with ❤️ for the Dota 2 community       ║
-║                                              ║
-║  Customize your game, express yourself!      ║
-╚══════════════════════════════════════════════╝
-`,
-  "color: #D0652F; font-weight: bold; font-size: 12px; font-family: monospace;",
-);
