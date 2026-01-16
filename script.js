@@ -106,7 +106,7 @@ function createGalleryItem(background) {
   const repoBase =
     "https://raw.githubusercontent.com/trapplus/Dota2-custom-bg/main";
   const imagePath = `${repoBase}/resources/complited-bg/${background.folder}/img.jpg`;
-  const downloadPath = `https://github.com/trapplus/Dota2-custom-bg/raw/main/resources/complited-bg/${background.folder}/pak03_dir.vpk`;
+  const downloadPath = `https://github.com/trapplus/Dota2-custom-bg/raw/main/assets/complited-bg/${background.folder}/pak03_dir.vpk`;
 
   item.innerHTML = `
         <div class="gallery-image-wrapper">
