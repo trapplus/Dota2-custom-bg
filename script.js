@@ -106,7 +106,7 @@ function createGalleryItem(background) {
   const repoBase =
     "https://raw.githubusercontent.com/trapplus/Dota2-custom-bg/main";
   const imagePath = `${repoBase}/assets/complited-bg/${background.folder}/img.jpg`;
-  const downloadPath = `https://raw.githubusercontent.com/trapplus/Dota2-custom-bg/refs/heads/main/assets/complited-bg/${background.folder}/pak03_dir.vpk`;
+  const downloadPath = `https://github.com/trapplus/Dota2-custom-bg/raw/main/assets/complited-bg/${background.folder}/pak03_dir.vpk`;
 
   item.innerHTML = `
         <div class="gallery-image-wrapper">
@@ -145,6 +145,7 @@ function openLightbox(background, imagePath, downloadPath) {
   lightboxImage.alt = background.title;
   lightboxTitle.textContent = background.title;
   lightboxDownload.href = downloadPath;
+  lightboxDownload.setAttribute("download", `${background.folder}.vpk`);
   lightbox.classList.add("active");
   document.body.style.overflow = "hidden";
 }
@@ -168,12 +169,18 @@ document.addEventListener("keydown", (e) => {
     closeLightbox();
   }
 });
-
 // ===== Smooth Scroll with Offset =====
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
+    const href = this.getAttribute("href");
+    
+    // Ignore external links and download links
+    if (!href || !href.startsWith("#")) {
+      return;
+    }
+    
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
+    const target = document.querySelector(href);
     if (target) {
       const offset = 80;
       const targetPosition = target.offsetTop - offset;
@@ -184,7 +191,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
-
 // ===== Method Tabs Switching =====
 const tabButtons = document.querySelectorAll(".tab-button");
 const methodContents = document.querySelectorAll(".method-content");
@@ -250,8 +256,8 @@ document.addEventListener("DOMContentLoaded", () => {
     githubLink.href = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO}`;
   }
 
-  console.log("🎨 Dota 2 Custom Backgrounds loaded successfully!");
-  console.log(`📦 Total backgrounds: ${backgrounds.length}`);
+  console.log("Dota 2 Custom Backgrounds loaded successfully!");
+  console.log(`Total backgrounds: ${backgrounds.length}`);
 });
 
 // ===== Performance Optimization =====
