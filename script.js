@@ -34,7 +34,7 @@ const backgrounds = [
         id: 'madara-sharingan',
         title: 'Madara Sharingan',
         folder: 'madara-sharingan',
-        description: 'Мощный Мадара с шаринганом'
+        description: 'Мадара с шаринганом'
     },
     {
         id: 'madara-susanoo',
@@ -59,6 +59,12 @@ const backgrounds = [
         title: 'Your Name',
         folder: 'your-name',
         description: 'Романтичный фон из аниме "Твоё имя"'
+    },
+    {
+      id: 'your-name',
+      title: 'Your Name',
+      folder: 'your-name',
+      description: 'Романтичный фон из аниме "Твоё имя"'
     }
 ];
 
@@ -98,8 +104,8 @@ function createGalleryItem(background) {
     
     // Construct GitHub raw URL for the image
     const repoBase = 'https://raw.githubusercontent.com/trapplus/Dota2-custom-bg/main';
-    const imagePath = `${repoBase}/complited-bg/${background.folder}/img.jpg`;
-    const downloadPath = `https://github.com/trapplus/Dota2-custom-bg/raw/main/complited-bg/${background.folder}/pak03_dir.vpk`;
+    const imagePath = `${repoBase}/resources/complited-bg/${background.folder}/img.jpg`;
+    const downloadPath = `https://github.com/trapplus/Dota2-custom-bg/raw/main/resources/complited-bg/${background.folder}/pak03_dir.vpk`;
     
     item.innerHTML = `
         <div class="gallery-image-wrapper">
