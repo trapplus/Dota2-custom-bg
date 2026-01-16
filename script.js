@@ -213,7 +213,7 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     observer.observe(item);
 });
 
-// ===== Scroll Progress Indicator (Optional Enhancement) =====
+// ===== Scroll Progress Indicator =====
 window.addEventListener('scroll', () => {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -224,7 +224,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== Dynamic Repository Info =====
-// Update these values with your actual GitHub repository information
+
 const GITHUB_USERNAME = 'trapplus';
 const GITHUB_REPO = 'Dota2-custom-bg';
 
